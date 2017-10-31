@@ -77,7 +77,7 @@ count = 1
 while 1:
 				system('tput reset')
 				if count < 4:
-								print(globals()[f'numb{count}'])
+								print(globals()["numb{}".format(count)])
 				else:
 								print(goat1 if count % 2 else goat2)
 				sleep(0.24)
